@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
-    
+<body class="inter-font">
+    <section class="navigation">
+        <nav class="nav-item">
+            <h2 class="logo">Tech<span class="wave">Wave</span></h2>
+             <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <img src="./hamburger-menu.png" alt="menu">
+            </label>
+            <div class="menu">
+                <p><a href="">About</a></p>
+                <p><a href="">Episodes</a></p>
+                <p><a href="">Host</a></p>
+            </div>
+            <div class="subscribe">
+                <button class="btn inter-font">Subscribe  <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </nav>
+    </section>
+    <section class="hero">
+        <div class="hero-content">
+        <img src="./cirle.png" alt="" class="hero-image">
+        <h2 class="hero-title">TechWave</h2>
+        <p class="hero-description">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+        <div class="hero-button">
+        <button class="hero-btn"> <img src="./spotify.png" alt=""> Listen On Spotify</button><button class="hero-btn-two"> <img src="./message.png" alt="">  Subscribe</button>
+        </div>
+        </div>
+    </section>
 </body>
 </html>
