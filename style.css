@@ -52,11 +52,20 @@ body {
     font-weight: 700;
 }
 
-.wave {
-   background: linear-gradient(to right, #ff2bdc, #7a5cff);
+.wave  {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
+
 
 .btn {
  background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
@@ -68,11 +77,19 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
+.btn {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(145,0,248,.3);
+}
+
 
 .nav-divider {
     height: 1px;
@@ -121,7 +138,7 @@ body {
 
 .hero-image {
   width: 422px;
- animation: spin 2s linear infinite;
+ animation: spin 0.5s linear infinite;
 }
 
 
@@ -180,6 +197,15 @@ body {
     border: 1px solid #00FF88;
     font-size: 16px;
 }
+.hero-btn-two {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.hero-btn-two:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(145,0,248,.3);
+}
+
 .hero-button {
     display: flex;
     margin-top: 24px;
