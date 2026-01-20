@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #412567;
+    /* background-color: #412567; */
     padding: 16px 5%;
 }
 
@@ -72,6 +72,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+
+.nav-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);;
 }
 
   /* Hero section related style */
@@ -130,18 +135,25 @@ body {
      border-radius: 30px;
       animation: badge 0.2s linear infinite;
   }
-
+.microphone {
+    position: relative;
+    top: -380px;
+}
  .hero-title {
     font-size: 60px;
     font-weight: 900;
     color: #ffffff;
     margin-top: 40px;
+    position: relative;
+    top: -250px;
  }
 .hero-description {
     font-size: 16px;
     color: #ffffff9f;
     font-weight: 400;
     margin-top: 8px;
+    position: relative;
+    top: -250px;
 }
 .hero-btn {
   background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
@@ -171,6 +183,8 @@ body {
 .hero-button {
     display: flex;
     margin-top: 24px;
+    position: relative;
+    top: -260px;
 }
 
 
@@ -179,14 +193,18 @@ body {
 .about {
     background-color: #1A0B2E;
     padding-top: 5%;
+    
 }
 .about-info {
     text-align: center;
+    position: relative;
+    top: -200px;
 }
 .about-info h3 {
     color: #FFFFFF;
     font-size: 3rem;
     font-weight: 700;
+    margin-top: 10%;
 }
 .about-info p,.about-info span  {
     color: #ffffff;
@@ -200,6 +218,8 @@ body {
     height: 1px;
     background: rgba(255, 255, 255, 0.15);;
     width: 70%;
+    position: relative;
+    top: -150px;
 }
 .rating-container {
     display: flex;
@@ -208,6 +228,8 @@ body {
     gap: 12%;
     padding: 2% 0;
     padding-bottom: 2%;
+    position: relative;
+    top: -100px;
 }
 
 .about-rating {
@@ -340,10 +362,13 @@ body {
   /* height: 440px; */
   border-radius: 20px;
   font-family: Arial, sans-serif;
+  border-radius: 20px;
 
 }
 iframe {
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
 }
 .card h3 {
 font-size: 24px;
@@ -364,7 +389,7 @@ font-size: 24px;
     align-items: center;
     gap: 10px;
     padding-left: 10px;
-    padding-bottom: 5%;
+    padding-bottom: 25%;
 }
 
 
@@ -375,7 +400,7 @@ font-size: 24px;
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -474,6 +499,8 @@ font-size: 24px;
     opacity: 0.85;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    position: relative;
+    top: -27px;
 }
 
 .platform img {
@@ -529,10 +556,9 @@ font-size: 24px;
   /* Hero section related style */
   .hero {
     background-image: url(./hero-bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 80px;
+    background-position: center top;
     height: auto;
     width: 100%;
 
@@ -547,9 +573,17 @@ font-size: 24px;
     gap: 16px;
   }
   .hero-image {
-    max-width: 200px;
+    position: relative;
+    top: -125px;
+    max-width: 100px;
     margin-top: 0px;
 
+  }
+
+  .microphone {
+    position: relative;
+    top: -270px;
+    width: 40px;
   }
  .hero-title {
     font-size: 40px;
@@ -559,10 +593,10 @@ font-size: 24px;
  }
  .badge {
      position: relative;
-     top: -200px;
-     right:-75px;
+     top: -220px;
+     right:-50px;
      background: #00FF88;
-     padding: 10px 20px;
+     padding: 5px 8px;
      border: none;
      border-radius: 30px;
   }
@@ -734,6 +768,9 @@ font-size: 24px;
   /* FOOTER SECTION  */
    .footer-logo {
       font-size: 2.2rem;
+      margin-bottom: 2%;
+      position: relative;
+      top: -30px;
   }
 
   .footer-platforms {
@@ -741,10 +778,13 @@ font-size: 24px;
       gap: 16px;
   }
 
+
   .platform {
       font-size: 12px;
   }
-
+  .platform img {
+    width: 20px;
+  }
   .footer-copy {
       font-size: 11px;
   }
