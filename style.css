@@ -171,7 +171,7 @@
     justify-content: center;
     text-align: center;
     gap: 12%;
-    margin: 2% 0;
+    padding: 2% 0;
     padding-bottom: 2%;
 }
 
@@ -188,6 +188,153 @@
     opacity: 80%;
     color: #FFFFFF;
 }
+
+/* tech related style */
+.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #230E3D;
+    margin-top: 0;
+}
+.tech-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+    padding-top: 2%;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px;
+    background-color: #351165;
+    border: none;
+    border-radius: 40px;
+    gap: 16px;
+    padding: 40px;
+    width: 100%;
+}
+
+.design h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.design p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    opacity: 60%;
+    margin-bottom: ;
+}
+
+.audio {
+    grid-area: audio;
+}
+.mobile{
+    grid-area: mobile;
+}
+.global {
+    grid-area: global;
+}
+.exclusive{
+    grid-area: exclusive;
+}
+.rich {
+    grid-area: rich;
+}
+
+.tech-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  gap: 24px;
+  padding-bottom: 2%;
+  grid-template-areas: 
+    "audio audio mobile mobile mobile mobile"
+    "audio audio mobile mobile mobile mobile"
+    "audio audio global global global global"
+    "audio audio global global global global"
+    "exclusive exclusive exclusive exclusive rich rich"
+    "exclusive exclusive exclusive exclusive rich rich";
+}
+
+
+
+
+
+/* FEATURED SECTION RELATED STYLE */
+.feature-host{
+    background-color: #1A0B2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-title {
+    color: white;
+    font-size: 3rem;
+    padding: 5% 0px;                                                 ;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #250D44;
+  color: white;
+  width: 320px ;
+  /* height: 440px; */
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+
+}
+iframe {
+    border-radius: 20px;
+}
+.card h3 {
+font-size: 24px;
+ font-weight: 700;
+ margin-top: 20px;
+ margin-bottom: 2%;
+ padding-left: 10px;
+}
+.card p {
+  font-size: 16px;
+  opacity: 80%;
+  margin-bottom: 5%;
+  padding-left: 10px;
+}
+
+.time {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-bottom: 5%;
+}
+
+
+
+
 
 /* Small Device */
 @media  screen and (max-width:576px) {
@@ -287,5 +434,99 @@
     display: flex;
     margin-top: 24px;
 }
+
+/* About section related design  */
+
+.about {
+    background-color: #1A0B2E;
+    padding-top: 2%;
+}
+.about-info {
+    text-align: center;
+}
+.about-info h3 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about-info p,.about-info span  {
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.divider {
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);;
+    width: 90%;
+}
+.rating-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 12%;
+    margin: 0% 0;
+    padding-bottom: 10%;
+
+}
+
+.about-rating {
+    color: #00FF88;
+}
+.about-rating h4 {
+    font-size:3rem;
+    font-weight: 900;
+}
+.rating-description {
+    font-size:1rem;
+    font-weight: 400;
+    opacity: 80%;
+    color: #FFFFFF;
+}
+
+.broke {
+    display: none;
+}
+
+/* tech related style */
+.tech-title{
+    font-size: 32px;
+    padding-top: 20px;
+}
+.tech-container {
+    display: flex;
+    flex-direction: column;
+}
+.design {
+    padding: 24px 24px;
+    border-radius: 24px;
+    max-width: 400px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.design h3 {
+    font-size: 22px;
+}
+
+/* FEATURED RELATED STYLE */
+.feature {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:30px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-title {
+    color: white;
+    font-size: 2rem;
+    margin: 20px 0;                                                 ;
+}
+
 }
 
